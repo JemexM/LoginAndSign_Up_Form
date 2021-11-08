@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Activity8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container Register" id="register-container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label>Username</label>
+                <input type="text" placeholder="ABC64" id="username">
+                <small>error message</small>
+            </div>
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" placeholder="JuanDelaCruz24@email.com" id="email">
+                <small>error message</small>
+            </div>
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" placeholder="Create password" id="password">
+                <small>error message</small>
+            </div>
+            <div class="form-control">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Password check" id="cpassword">
+                <small>error message</small>
+            </div>
+            <div class="form-control">
+                <span>Click Submit for Additional Security Question?</span>
+                <input type="text" id="question" class="question" placeholder="Ex. Who is my Bestfriend?" readonly>
+                <input class="answer" type="text" id="answer" placeholder="answer to your question?" onfocus="this.value=''">
+                <small></small>
+            </div>
+            <button id="Submit">Submit</button>
+            <input type="button" onclick="sign_Up()" value="Sign Up" id="sign-up">
+            <span class="link">Already Registered? <a onclick="SignIn()" id="aLogin">Login</a></span>
+        </form>
+    </div>
+    <div class="container Login" id="login-container">
+        <div class="header">
+            <h2>Login Account</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label>Username/Email</label>
+                <input type="text" placeholder="ABC64 / ABC64@gg.com" id="username">
+                <small>error message</small>
+            </div>
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" placeholder="Create password" id="password">
+                <small>error message</small>
+            </div>
+            <button id="Submit">Submit</button>
+            <span class="link">Not Registered? <a onclick="SignUP()" id="aSignup">SignUp</a></span>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

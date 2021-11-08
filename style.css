@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to bottom right, blue, skyblue);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+h2 {
+    margin: 0;
+}
+.container {
+    background-color: skyblue;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: 500px;
+    max-width: 100%;
+}
+.header {
+    background-color: rgb(38, 175, 230);
+    padding: 10px 30px;
+    border-bottom: 1px solid rgb(3, 40, 54);
+}
+.form {
+    padding: 20px 30px;
+}
+.form-control {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 8px;
+    width: 100%;
+}
+.form-control input[type="button"] {
+    background-color: rgb(238, 126, 81);
+    border: 2px solid rgb(238, 126, 81);
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+}
+.form-control.correct input {
+    border-color: #018b3b;
+}
+.form-control.error input {
+    border-color: #ee3d37;
+}
+.form-control small {
+    color: red;
+    margin: 0;
+    display: none;
+}
+.form-control.error small {
+    display: block;
+}
+.form button {
+    background-color: rgb(51, 85, 236);
+    border: 2px solid rgb(51, 85, 236);
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 250ms ease-in-out;
+}
+.form button:hover {
+    background-color: rgb(8, 42, 194);
+}
+.form-control input.answer {
+    display: none;
+}
+.form-control.error input.answer {
+    display: none;
+}
+.form-control.correct input.answer {
+    display: block;
+    border-color: #018b3b;
+}
+input[type="button"] {
+    background-color: rgb(51, 85, 236);
+    border: 2px solid rgb(51, 85, 236);
+    color: #fff;
+    display: none;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+}
+.Register {
+    display: none;
+}
+a {
+    color: rgb(182, 15, 182);
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 250ms ease-in-out;
+}
+a:hover {
+    color: rgb(185, 85, 185);
+}
+
+.link {
+    display: block;
+    padding-top: 5px;
+}
